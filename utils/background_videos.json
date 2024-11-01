@@ -59,5 +59,17 @@
         "steep.mp4",
         "joel",
         "center"
+    ],
+    "fortnite": [
+        "https://www.youtube.com/watch?v=meP2raZ9ODA",
+        "fortnite.mp4",
+        "chris",
+        "center"
+    ],
+    "fortnite2": [
+        "https://www.youtube.com/watch?v=k58JmzGoiQo",
+        "fortnite2.mp4",
+        "chris",
+        "center"
     ]
 }

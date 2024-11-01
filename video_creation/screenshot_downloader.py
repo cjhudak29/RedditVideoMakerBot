@@ -102,7 +102,7 @@ def get_screenshots_of_reddit_posts(reddit_object: dict, screenshot_num: int):
 
         page.locator(f'input[name="username"]').fill(settings.config["reddit"]["creds"]["username"])
         page.locator(f'input[name="password"]').fill(settings.config["reddit"]["creds"]["password"])
-        page.get_by_role("button", name="Log In").click()
+        page.get_by_role("button", name="Log In").click(timeout=60000)
         page.wait_for_timeout(5000)
 
         login_error_div = page.locator(".AnimatedForm__errorMessage").first
