@@ -45,7 +45,7 @@ class AWSPolly:
             try:
                 # Request speech synthesis
                 response = polly.synthesize_speech(
-                    Text=text, OutputFormat="mp3", VoiceId=voice, Engine="neural"
+                    Text=text, OutputFormat="mp3", VoiceId=voice, Engine="standard"
                 )
             except (BotoCoreError, ClientError) as error:
                 # The service returned an error, exit gracefully
